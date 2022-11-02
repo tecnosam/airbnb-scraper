@@ -111,6 +111,7 @@ class ListingsSpider(scrapy.Spider):
             'longitude': listing['lng'],
             'room_type': listing['room_type'],
             'picture_url': listing['picture_url'],
+            'reviews_count': listing['reviews_count'],
 
             'amenities': listing['amenity_ids']
         }

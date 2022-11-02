@@ -27,6 +27,8 @@ class Listing(scrapy.Item):
     picture_url = scrapy.Field()
 
     amenities: list = scrapy.Field()
+    
+    reviews_count = scrapy.Field()
 
     # rating: RatingItem
 

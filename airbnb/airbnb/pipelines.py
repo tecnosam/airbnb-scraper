@@ -66,6 +66,8 @@ class MongoPipeline:
 
     @classmethod
     def from_crawler(cls, crawler):
+        
+        print("\n\n\n", crawler.settings.get('MONGO_URI'), "\n\n\n\n")
         return cls(
             mongo_uri=crawler.settings.get('MONGO_URI'),
             mongo_db=crawler.settings.get('MONGO_DATABASE')
